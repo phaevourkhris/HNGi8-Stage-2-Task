@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background: whitesmoke;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  background: white;
+  margin-top: 20px;
+  min-width: 301px;
+  max-width: 860px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./img/computer1.jpg) no-repeat center;
+  background-size: cover;
+  min-height: 300px;
+  align-items: center;
+  margin-bottom: 2em;
+  padding: 4rem 0;
+}
+
+.header-content {
+  text-align: center;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.mypic {
+  border-radius: 50%;
+  width: 30%;
+}
+
+#name,
+.job-title {
+  margin-bottom: 20px;
+}
+
+.dwnld-btn {
+  border: none;
+  background-color: #8cbb4a;
+  color: #002400;
+  margin-right: 10px;
+  font-size: 1rem;
+  padding: 5px 15px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dwnld-btn:hover,
+.dwnld-btn:active{
+    border: 1px solid #8cbb4a;
+  background: none;
+  color: white;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+section .title {
+  position: relative;
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.summary p {
+  line-height: 2rem;
+}
+
+.left{
+    margin-bottom: 2em;
+}
+
+.detail-item{
+    justify-content: flex-start;
+}
+
+
+.detail-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-right: 20px;
+}
+
+.skills-logo {
+  justify-content: space-between;
+  display: flex;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.logo {
+  width: 150px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.logo img {
+  object-fit: contain;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.experience {
+  background: #dcecc7;
+  padding: 2em;
+}
+
+.job-details{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.section-content,
+.position,
+.org-name {
+  font-size: 1rem;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.org-name,
+ul {
+  margin-bottom: 20px;
+}
+
+span {
+  font-weight: normal;
+}
+
+.education img{
+    width: 100px;
+    margin-right: 20px;
+}
+
+.course,
+.school {
+  font-weight: bold;
+}
+
+.organizations{
+    background: #002400;
+    color: white;
+    margin-bottom: 0;
+    padding: 2em;
+}
+
+.logos{
+    margin: 0 auto;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logos img{
+    height:80px;
+    border-radius: 50%;
+
+}
+
+/* Responsiveness */
+@media screen and (min-width: 760px) {
+   
+.hero{
+    padding: 0;
+}
+
+  .header-content{
+    flex-direction: row;
+    padding-left: 2em;
+    text-align: left;
+    margin: 0;
+  }
+
+  .mypic{
+      width: 200px;
+      margin-right: 40px;
+  }
+
+  .detail-item{
+      display: block;
+  }
+
+  section .title {
+    font-size: 1.6rem;
+  }
+
+  .summary{
+     display: flex;
+     justify-content: space-between;
+  }
+
+  .left {
+    width: 65%;
+  }
+  .right {
+    width: 30%;
+  }
+
+  .section-content,
+  .position,
+  .org-name {
+    font-size: 1.2rem;
+    line-height: 30px;
+  }
+}
