@@ -205,9 +205,8 @@
     <script>
         function makeActive(){
             const menus = document.querySelectorAll(".menu-items li a");
-            console.log(event.target);
+            const menuBar = document.querySelector(".menu-items");
             for (let i=0; i<menus.length; i++){
-                console.log(menus[i]);
                 if(event.target === menus[i]){
                     menus[i].style.color = "#8cbb4a";
                 }
@@ -215,20 +214,23 @@
                     menus[i].style.color = "white";
                 }
             }
+
+            if(menuBar.classList.contains("vert")){
+                menuBar.style.display = "";
+            };
         }
 
         function showMenu(){
             const menuBar = document.querySelector(".menu-items");
             let display = menuBar.style.display;
-            console.log(menuBar.style.display);
-            console.log(menuBar.style.display);
             if(display === ""){
                 menuBar.style.display="flex";
+                menuBar.classList.add("vert");
             }
             else{
                 menuBar.style.display = "";
+                menuBar.classList.remove("vert");
             }
-            // menuBar.style.display.t ="flex";
         }
     </script>
 </body>
