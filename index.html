@@ -2,23 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Favour Christopher || Resume</title>
+    <title>Favour Christoper | Resume</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
+            <nav class="flex">
+                <p id="title">RESUME</p>
+                <div class="menu flex">
+                    <div onclick="showMenu()" class="hamburger">
+                        <p class="bar-1"></p>
+                        <p class="bar-2"></p>
+                        <p class="bar-3"></p>
+                    </div>
+                    <ul class="menu-items flex">
+                        <li><a onclick="makeActive()" href="#about">About</li></a>
+                        <li><a onclick="makeActive()" href="#skills">Skills</li></a>
+                        <li><a onclick="makeActive()" href="#exp">Experience</li></a>
+                        <li><a onclick="makeActive()" href="#projects">Projects</li></a>
+                        <li><a onclick="makeActive()" href="#contact">Contact</li></a>
+                    </ul>
+                </div>
+                
+            </nav>
             <div class="hero flex">
                 <div class="header-content flex">
-                    <img class="mypic" src="./img/pics.jpeg" alt="">
-                    <div>
+                    <div class="pic"><img class="mypic" src="./img/pics.jpeg" alt=""></div>
+                    <div class="hero-text">
                         <h1 id="name">Favour Christopher</h1>
                         <p class="job-title">Frontend Web Developer<br />ICT Instructor</p>
-                        <a href="https://drive.google.com/uc?export=download&id=1BCNvoAa8CAsnjLH0AuTGBrLpxPbPV66D" download="Favour Christopher -CV"><button class="dwnld-btn">Download CV</button></a>
+                        <div class="hero-btn flex">
+                            <a href="https://drive.google.com/uc?export=download&id=1BCNvoAa8CAsnjLH0AuTGBrLpxPbPV66D" download="Favour Christopher -CV"><button class="dwnld-btn">Download CV</button></a>
+                            <a href="#contact"><button class="contact-btn">Get In Touch</button></a>
+                        </div>
                         
                     </div>
                     
@@ -26,12 +47,12 @@
             </div>
         </header>
         <main>
-            <section class="summary">
+            <section id = "about" class="flex">
                 <div class="left">
-                    <p class="title">About Me</p>
+                    <p class="section-title">About Me</p>
                     <p>Hello, I am Favour Christopher. I am a self taught Frontend Web Developer who is passionate about Web development and Technology as a whole. An Enthusiastic individual eager to contribute to team success through hard work, attention to detail  and excellent learning skills. Ability to troubleshoot diagnose and resolve basic hardware and  software issues. Motivated to learn, grow and excel in the Tech industry.</p>
                 </div>
-               <div class="right">
+               <div id="contact" class="right">
                    <p class="title">Bio</p>
                     <div class="details">
                         <div class="detail-item flex">
@@ -49,77 +70,166 @@
                     </div>
                </div>
             </section>
-            <section class="skills">
-                <h3 class="title">Skill</h3>
+            <section class="skills" id="skills">
+                <p class="section-title">Skills</p>
                 <div class="skills-logo flex">
                     <div class="logo"><img src="./img/html5.png" alt="HTML5"></div>
                     <div class="logo"><img src="./img/css3-logo.png" alt="CSS3"></div>
                     <div class="logo"><img src="./img/js.png" alt="Javascript"></div>
                     <div class="logo"><img src="./img/bootstrap.png" alt="bootstrap"></div>
+                    <div class="logo"><img src="./img/react.png" alt="react"></div>
+
                 </div>
             </section>
-            <section class="experience">
-                <h3 class="title">Work Experience</h3>
-                <div class="job-details">
-                    <h4 class="position">HNGi8 Intern <span>- August, 2021 - Present</span></h4>
-                    <h4 class="org-name">Hotels.ng, Ingressive for Good & Zuri <span>-Remote</span></h4>
-                    <ul class="section-content">
-                        <li class="skill">HTML </li>
-                        <li class="skill">CSS</li>
-                        <li class="skill">Javascript</li>
-                    </ul>
+            <section id ="exp" class="work-experience">
+                <p class="section-title">Work Experience</p>
+                <div class="job-details flex">
+
+                    <h4 class="org-name">Hotels.ng, Ingressive for Good & Zuri <br /><span>- Aug, 2021 - Present</span></h4>
+                    <div class="card-body">
+                        <h4 class="position">HNGi8 Intern <br /><span>-Remote</span></h4>
+                        <ul class="section-content">
+                            <li class="skill">HTML </li>
+                            <li class="skill">CSS</li>
+                            <li class="skill">Javascript</li>
+                        </ul>
+                    </div>
+                    
                 </div>
-                <div class="job-details">
-                    <h4 class="position">ICT Instructor / Social Media Manager <span>- March, 2021 - Present</span></h4>
-                    <h4 class="org-name">Cambridge College, <span>Ikeja, Lagos State</span></h4>
-                    <ul class="section-content">
-                        <li class="skill">Tutor classes on ICT for IGSCE students </li>
-                        <li class="skill">Train other staff on basic computer use (including introduction to MS Office)</li>
-                        <li class="skill">Handle all social media platforms</li>
-                    </ul>
+                <div class="job-details flex">
+
+                    <h4 class="org-name">CAMBRIDGE COLLEGE <br /><span>- Mar, 2021 - Present</span></h4>
+                    <div class="card-body">
+                        <h4 class="position">ICT Instructor / Social Media Manager</h4>
+                        <ul class="section-content">
+                            <li class="skill">Tutor classes on ICT for IGSCE students </li>
+                            <li class="skill">Train other staff on basic computer use (including introduction to MS Office)</li>
+                            <li class="skill">Handle all social media platforms</li>
+                        </ul>
+                    </div>
+                    
                 </div>
-                <div class="job-details">
-                    <h6 class="position">IT Instructor / Technician <span>- August, 2020 - February 2021</span></h6>
-                    <h6 class="org-name">XYZ Technologies, <span>Umuahia, Abia State</span></h6>
-                    <ul class="section-content">
-                        <li class="skill">Tutor classes on Computer Appreciation and Applications </li>
-                        <li class="skill">Handle Online Registrations</li>
-                        <li class="skill">Troubleshoot and handle hardware issues</li>
-                    </ul>
+                <div class="job-details flex">
+
+                    <h4 class="org-name">XYZ TECHNOLOGIES <br /><span>- Aug, 2020 - Feb, 2021</span></h4>
+                    <div class="card-body">
+                        <h4 class="position">IT Instructor / Technician </h4>
+                        <ul class="section-content">
+                            <li class="skill">Tutor classes on Computer Appreciation and Applications </li>
+                            <li class="skill">Handle Online Registrations</li>
+                            <li class="skill">Troubleshoot and handle hardware issues</li>
+                        </ul>
+                    </div>
+                    
                 </div>
-                <div class="job-details">
-                    <h6 class="position">IT Support Intern <span>- May, 2018 - December 2018</span></h6>
-                    <h6 class="org-name">Schlumberger Nigeria Limited, <span>Victoria Island, Lagos State</span></h6>
-                    <ul class="section-content">
-                        <li class="skill">Provided onsite and remote support to improve operations and problem resolution</li>
-                        <li class="skill">Handled installation and configuration of hardware and software to ensure usability</li>
-                        <li class="skill">Tasked with ticket resolution and management</li>
-                    </ul>
-                </div>
+                <div class="job-details flex">
+
+                    <h4 class="org-name">SCHLUMBERGER NIGERIA LTD <br /><span>- May, 2018 - Dec, 2018</span></h4>
+                    <div class="card-body">
+                        <h4 class="position">IT Support Intern</h4>
+                        <ul class="section-content">
+                            <li class="skill">Provided onsite and remote support to improve operations and problem resolution</li>
+                            <li class="skill">Handled installation and configuration of hardware and software to ensure usability</li>
+                            <li class="skill">Tasked with ticket resolution and management</li>
+                        </ul>
+                    </div>
+                    
             </section>
             <section class="education">
-                <h3 class="title">Education</h3>
+                <p class="section-title">Education</p>
                 <div class="flex">
-                    <img src="./img/education.svg" alt="">
+                    <img src="./img/education.svg" alt="education">
                     <div>
-                        <p class="section-content">Bachelor of Technology (First Class Honors): <span class=
-                    
-                            "course">Computer Science</span> - 2019  </p>
+                        <p class="section-content degree">Bachelor of Technology (First Class Honors): <span class="course">Computer Science</span> - 2019  </p>
                         <p class="section-content"><span class="school">Federal University of Technology, Owerri,</span> Imo State</p>
                     </div>
                 </div>
                 
+                
             </section>
-            <section class="organizations">
-                <div class="logos flex">
-                    <a href="https://zuri.team/"><img src="./img/zuri.png" alt=""></a>
-                    <a href="https://ingressive.org/"><img src="./img/i4g.jpg" alt=""></a>
-                    <a href="https://hng.tech/"><img src="./img/hng-logo.jpg" alt=""></a>
+            <section id="projects" class="portfolio">
+                <p class="section-title">Projects</p>
+                <div class="projects flex">
+                    <div class="project prjt-1 flex">
+                        <img src="./img/blog.png" alt="">
+                        <div class="overlay">
+                            <div class="overlay-btns">
+                                <a href="https://phaevourkhris.github.io/Living-the-simple-life/index.html" target="_blank"><button class="demo">Demo</button></a>
+                                <a href="https://github.com/phaevourkhris/Living-the-simple-life" target="_blank"><button class="code">View Code</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project prjt-2 flex">
+                        <img src="./img/digiceipt.png" alt="">
+                        <div class="overlay">
+                            <div class="overlay-btns">
+                                <a href="https://digiceipt-pjt-57.netlify.app/" target="_blank"><button class="demo">Demo</button></a>
+                                <a href="https://github.com/phaevourkhris/DigiCeipt-FE-PJT-57" target="_blank"><button class="code">View Code</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project prjt-3 flex">
+                        <img src="./img/tetris.png" alt="">
+                        <div class="overlay">
+                            <div class="overlay-btns">
+                                <a href="https://phaevourkhris.github.io/Tetris-Game/" target="_blank"><button class="demo">Demo</button></a>
+                                <a href="https://github.com/phaevourkhris/Tetris-Game" target="_blank"><button class="code">View Code</button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project prjt-4 flex">
+                        <img src="./img/grid.png" alt="">
+                        <div class="overlay">
+                            <div class="overlay-btns">
+                                <a href="https://frontend-mentor-testimonial-grid-challenge.vercel.app/" target="_blank"><button class="demo">Demo</button></a>
+                                <a href="https://github.com/phaevourkhris/frontend-mentor-testimonial-grid-challenge" target="_blank"><button class="code">View Code</button></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
             </section>
         </main>
+        <footer>
+            <div class="flex">
+                <a href="https://hng.tech/"><img src="./img/hng-logo.jpg" alt=""></a> 
+                <a href="https://ingressive.org/"><img src="./img/i4g.jpg" alt=""></a> 
+                <a href="http://zuri.team/"><img src="./img/zuri.png" alt=""></a> 
+                <a href=""><img src="./img/xyz.png" alt=""></a> 
+                <a href=""><img src="./img/schlumberger.png" alt=""></a> 
+            </div>
+            <p class="copyright">Copyright 2021 @ Favour Christopher</p>
+           
+        </footer>
     </div>
-    
+    <script>
+        function makeActive(){
+            const menus = document.querySelectorAll(".menu-items li a");
+            console.log(event.target);
+            for (let i=0; i<menus.length; i++){
+                console.log(menus[i]);
+                if(event.target === menus[i]){
+                    menus[i].style.color = "#8cbb4a";
+                }
+                else{
+                    menus[i].style.color = "white";
+                }
+            }
+        }
+
+        function showMenu(){
+            const menuBar = document.querySelector(".menu-items");
+            let display = menuBar.style.display;
+            console.log(menuBar.style.display);
+            console.log(menuBar.style.display);
+            if(display === ""){
+                menuBar.style.display="flex";
+            }
+            else{
+                menuBar.style.display = "";
+            }
+            // menuBar.style.display.t ="flex";
+        }
+    </script>
 </body>
 </html>
